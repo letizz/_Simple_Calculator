@@ -1,4 +1,4 @@
-
+﻿
 import java.util.Scanner;
 
 class Calc {
@@ -20,7 +20,7 @@ class Calc {
         if (operands.length != 2) throw new Exception("Должно быть два операнда");
         oper = detectOperation(expression);
         if (oper == null) throw new Exception("Неподдерживаемая математическая операция");
-        //если оба числа римские
+        //если оба числа римскиемичвмчв
         if (Roman.isRoman(operands[0]) && Roman.isRoman(operands[1])) {
             //конвертируем оба числа в арабские для вычесления действия
             num1 = Roman.convertToArabian(operands[0]);
